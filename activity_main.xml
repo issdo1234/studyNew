@@ -1,0 +1,97 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:paddingLeft= "30dp"
+    android:paddingRight = "30dp"
+    android:background="@drawable/backgroundstudy"
+    android:paddingTop = "30dp"
+    android:paddingBottom = "30dp"
+    tools:context = ".MainActivity">
+
+    <ImageView
+        android:id="@+id/textview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/study"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/login"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlogin"
+        android:layout_marginTop="46dp"
+        android:autofillHints=""
+        android:focusable="true"
+        android:hint="@string/enter_name"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#556"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#556"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="login" />
+
+
+    <TextView
+        android:id="@+id/tvmotdepassoublier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mot de passe oublie ?"
+        android:textColor="#00BCD4"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvinscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmotdepassoublier"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="inscription"
+        android:textStyle="bold"
+        android:textColor="#1A5A1C"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
+
